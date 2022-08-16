@@ -23,7 +23,7 @@ env = environ.Env(
     ALLOW_ALL_ORIGINS=(bool, False),
     ALLOWED_HOSTS=(list, []),
     ALLOWED_ORIGINS=(list, []),
-    CSRF_TRUSTED_ORIGINS=(list, []),  # I added this
+    # CSRF_TRUSTED_ORIGINS=(list, []),  # I added this
     DATABASE_ENGINE=(str, "django.db.backends.sqlite3"),
     DATABASE_NAME=(str, BASE_DIR / "db.sqlite3"),
     DATABASE_USER=(str, ""),
@@ -170,5 +170,8 @@ REST_FRAMEWORK = {
 
 CORS_ORIGIN_WHITELIST = tuple(env.list("ALLOWED_ORIGINS"))
 CORS_ALLOW_ALL_ORIGINS = env.bool("ALLOW_ALL_ORIGINS")
+CSRF_TRUSTED_ORIGINS = tuple(env.list("ALLOWED_ORIGINS"))
+CORS_ALLOWED_ORIGINS = tuple(env.list("ALLOWED_ORIGINS"))
 
-CSRF_TRUSTED_ORIGINS = ["https://cookie-api-yousef.herokuapp.com"]  # I added this
+# CSRF_TRUSTED_ORIGINS = ['https://cookie-api-yousef.herokuapp.com/']  # I added this
+        
