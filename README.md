@@ -13,3 +13,42 @@
 
 > Deployed URL `https://cookie-api-yousef.herokuapp.com/`
 - add after base url `api/v1/cookie_stands` to see the cookie stand list
+
+
+
+> Some Images for stages
+
+
+![image](assets/elephant_sql_db.png)
+
+
+![image](assets/sql_data.png)
+
+
+![image](assets/admin_panel_using_heroku.png)
+
+
+![image](assets/data_inside_db.png)
+
+
+![image](assets/readOnly.png)
+
+
+![image](assets/data_in_online.png)
+
+
+![image](assets/details_on_heroku.png)
+
+
+![image](assets/testing.png)
+
+
+
+
+
+
+
+
+
+
+
