@@ -3,7 +3,7 @@ import requests
 
 # NOTE: Adjust these settings as needed
 API_HOST = "http://localhost:8000"
-RESOURCE_URI = "things"
+RESOURCE_URI = "cookie_stands"
 USERNAME = "admin"
 PASSWORD = "admin"
 
@@ -53,7 +53,7 @@ class ApiTester:
 
         response = requests.get(url, headers=headers)
 
-        return response.json() or 'No resources'
+        return response.json() or "No resources"
 
     def get_one(self, id):
         """get 1 resource by id from api
@@ -76,7 +76,7 @@ class ApiTester:
         return response.json()
 
     # TODO adjust parameter names to match API
-    def create(self, name, description=None, owner=None):
+    def create(self, location, description=None, owner=None):
         """creates a resource in api
 
         Usage:
@@ -95,7 +95,7 @@ class ApiTester:
         }
 
         data = {
-            "name": name,
+            "location": location,
             "description": description,
             "owner": owner,
         }
