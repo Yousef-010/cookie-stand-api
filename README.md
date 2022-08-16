@@ -1,24 +1,15 @@
-# api-quick-start
+# LAB 34 Django REST Framework Authentication & Production Server
 
-Template Project for starting up CRUD API with Django Rest Framework
 
-## Customization Steps
+> use for login `username:admin`   and   `password:admin`
 
-- DO NOT migrate yet
-- add additional dependencies as needed
-  - Re-export requirements.txt as needed
-- change `things` folder to the app name of your choice
-- Search through entire code base for `Thing`,`Things` and `things` to modify code to use your resource
-  - `project/settings.py`
-  - `project/urls.py`
-  - App's files
-    - `views.py`
-    - `urls.py`
-    - `admin.py`
-    - `serializers.py`
-    - `permissions.py`
-- Update ThingModel with fields you need
-  - Make sure to update other modules that would be affected by Model customizations. E.g. serializers, tests, etc.
-- Rename `project/.env.sample` to `.env` and update as needed
-- Run makemigrations and migrate commands
-- Optional: Update `api_tester.py`
+> Run `git push heroku main` and go to the admin panel `https://cookie-api-yousef.herokuapp.com/admin/`
+
+> home page `https://cookie-api-yousef.herokuapp.com/api/v1/cookie_stands/`
+
+> details page try `https://cookie-api-yousef.herokuapp.com/api/v1/cookie_stands/1/`
+
+> Elephant sql Link: `https://api.elephantsql.com/console/7f71eb6f-1db2-49d7-849b-8ebbfcf6d97e/browser?#`
+
+> Deployed URL `https://cookie-api-yousef.herokuapp.com/`
+- add after base url `api/v1/cookie_stands` to see the cookie stand list
