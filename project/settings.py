@@ -170,8 +170,6 @@ REST_FRAMEWORK = {
 
 CORS_ORIGIN_WHITELIST = tuple(env.list("ALLOWED_ORIGINS"))
 CORS_ALLOW_ALL_ORIGINS = env.bool("ALLOW_ALL_ORIGINS")
-CSRF_TRUSTED_ORIGINS = tuple(env.list("ALLOWED_ORIGINS"))
-CORS_ALLOWED_ORIGINS = tuple(env.list("ALLOWED_ORIGINS"))
 
 CSRF_TRUSTED_ORIGINS = ['https://cookie-api-yousef.herokuapp.com/']  # I added this
 
